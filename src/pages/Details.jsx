@@ -34,10 +34,16 @@ function Details() {
           <span className="loading loading-dots loading-lg"></span>
         </div>
       ) : (
-        <div className="flex justify-center items-center pb-[233px]">
-          <div className="flex justify-between gap-[344px]">
-            <img src={data.flags.png} alt="" width={560} height={401} />
-            <div className="flex justify-between gap-[117px]">
+        <div className="details-c">
+          <div className="details-main">
+            <img
+              src={data.flags.png}
+              alt=""
+              className="c-image"
+              width={560}
+              height={401}
+            />
+            <div className="details-text">
               <div>
                 <h1 className="text-white text-2xl text-bold mb-[23px]">
                   {data.name.common}
@@ -65,7 +71,7 @@ function Details() {
                   </li>
                 </ul>
               </div>
-              <ul className="mt-[87px]">
+              <ul className="mb mt-[87px]">
                 <li>
                   <span>Top Level Domain:</span>
                   <span>{data.cca3}</span>
